@@ -1,0 +1,256 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+% \documentclass[a4paper,10pt,oneside]{article}
+\documentclass[letterpaper,10pt,oneside]{simpleresumecv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Devin Lehmacher}
+\newcommand{\CVTitle}{Devin Lehmacher's Resume for Apple}
+\newcommand{\CVNote}{Resume compiled on {\today} for Apple}
+\newcommand{\CVWebpage}{github.com/lehmacdj}
+
+% PDF settings and properties.
+\hypersetup{%
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+\href{https://www.google.com/maps/place/232+Kings+Way,+Clemson,+SC+29631,+USA}
+{232 Kings Way, Clemson, SC 29631, USA}
+\par
+\href{mailto:djl329@cornell.edu}
+{djl329@cornell.edu}
+\,\SubBulletSymbol\,
++1\,(864)\,722-3014
+\,\SubBulletSymbol\,
+\href{https://\CVWebpage}
+{\CVWebpage}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section%
+{Education}
+{Education}
+{PDF:Education}
+
+\href{https://www.cornell.edu}
+{\textbf{Cornell University}},
+Ithaca, NY 14853
+\hfill
+\DatestampYMD{2015}{08}{25} --
+Present
+\GapNoBreak%
+\BulletItem%
+Bachelors of Arts, degree anticipated
+\DatestampYM{2019}{05}
+\begin{detail}
+\SubBulletItem%
+Majors:
+\href{https://www.cs.cornell.edu}
+{Computer Science}
+and
+\href{https://www.biology.cornell.edu}
+{Biology}
+\SubBulletItem%
+Cumulative GPA:\@ 3.39
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section%
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\href{https://www.clemson.edu}
+{\textbf{Clemson University}},
+College of Science
+
+\GapNoBreak%
+\hfill
+\DatestampYMD{2015}{06}{15} --
+Present
+\BulletItem%
+Undergraduate Research Student, Physics and Astronomy
+\begin{detail}
+\SubBulletItem%
+Project:
+MedusaLoop: Protein Loop Modeling Server
+\SubBulletItem%
+Supervisors:
+Dr.\ Feng Ding
+\SubBulletItem%
+Research areas:
+Protein loops, web development, linux, shell scripting
+\end{detail}
+
+\section%
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+{\textbf{Cornell Quidditch}},
+Cornell University
+\hfill
+\DatestampYMD{2015}{09}{05} --
+Present
+
+\GapNoBreak%
+\BulletItem%
+Captain
+
+{\textbf{Shake Ultimate}},
+Cornell University
+\hfill
+\DatestampYMD{2015}{09}{08} --
+Present
+
+\GapNoBreak%
+\BulletItem%
+Cornell's Ultimate Frisbee B-Team.
+
+{\textbf{Cornell Mafia Club}},
+Cornell University
+\hfill
+\DatestampYMD{2015}{10}{23} --
+Present
+
+\GapNoBreak%
+\BulletItem%
+Play mafia a game about logical deduction and analysis of other players.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section%
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\href{http://www.example.com/my-company}
+{\textbf{CS 2110 Consultant}},
+Cornell University
+\hfill
+\DatestampYMD{2016}{02}{09} --
+Present
+
+\GapNoBreak%
+\BulletItem%
+Responsible for helping other students be successful in CS 2110.
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section%
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\BulletItem%
+Java: Standard Libraries
+\BulletItem%
+OCaml: Standard Libraries, OCaml Core (Janestreet)
+\BulletItem%
+Vim
+\BulletItem%
+Commandline: Zsh, Bash, GNU Coreutils
+\BulletItem%
+Linux
+\BulletItem%
+Swift: Foundation, UIKit
+\BulletItem%
+{\LaTeX}
+\BulletItem%
+Perl
+\BulletItem%
+C++
+\BulletItem%
+C
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\section%
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem%
+English: Native language.
+
+\GapNoBreak%
+\BulletItem%
+German: Advanced (speaking, reading, writing).
+
+\GapNoBreak%
+\BulletItem%
+Spanish: Intermediate (reading, reading, writing).
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\section%
+{Interests}
+{Interests}
+{PDF:Interests}
+
+Board games,
+Outdoors,
+Hearthstone,
+Running.
+
+\end{body}
+
+%\begin{flushright}
+%\UseNoteFont%
+%[\textit{\CVNote}]%
+%\hspace{2.0mm}\null
+%\end{flushright}
+
+\label{LastPage}~%
+\end{document}
