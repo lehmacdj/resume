@@ -3,4 +3,6 @@ all:
 
 .PHONY: clean
 clean:
-	rm *.pdf *.aux *.out *.log *.fls *.fdb_latexmk *.synctex
+	@echo "Clean!"
+	@rm *.pdf *.aux *.out *.log *.fls *.fdb_latexmk *.synctex\
+	>/dev/null 2>&1 | exit 0
