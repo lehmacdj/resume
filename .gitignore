@@ -5,4 +5,4 @@
 *.fls
 *.fdb_latexmk
 *.synctex
-!files/
+!files/*.pdf
