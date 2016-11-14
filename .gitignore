@@ -5,5 +5,4 @@
 *.fls
 *.fdb_latexmk
 *.synctex
-
-!resume.pdf
+!files/
