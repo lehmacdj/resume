@@ -1,6 +1,6 @@
 all: resume.pdf
 
-resume.pdf:
+resume.pdf: resume.tex
 	xelatex resume.tex
 
 .PHONY: clean
