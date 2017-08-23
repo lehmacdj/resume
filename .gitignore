@@ -6,4 +6,5 @@
 *.fls
 *.fdb_latexmk
 *.synctex
+*.synctex.gz
 !files/*.pdf
