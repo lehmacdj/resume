@@ -250,6 +250,12 @@ BoldItalicFont=FreeSerifBoldItalic]
 {\UseSubSectionFont\raggedright\MakeUppercase{#1}}%
 \vspace{0.225\baselineskip}}
 
+% Macro: a Class for the classes section of my resume
+\newcommand{\Class}[3]{%
+\textbf{#1}, #2
+\hfill #3
+\par}
+
 % Macro: BigGap, BigGapNoBreak (big vertical gap between items in the same section).
 \newcommand{\BigGap}{\\[-1.75mm]~&}
 \newcommand{\BigGapNoBreak}{\par\vspace{2.45mm}\par}
