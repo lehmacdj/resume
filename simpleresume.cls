@@ -251,9 +251,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 \vspace{0.225\baselineskip}}
 
 % Macro: a Class for the classes section of my resume
-\newcommand{\Class}[3]{%
+\newcommand{\Class}[2]{%
 \textbf{#1}, #2
-\hfill #3
 \par}
 
 % Macro: BigGap, BigGapNoBreak (big vertical gap between items in the same section).
