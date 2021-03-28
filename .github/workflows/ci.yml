@@ -16,6 +16,6 @@ jobs:
         with:
           run: |
             apk add make
-            make
+            make persistent
       - name: Commit/push new resume
       - uses: actions-js/push@v1
