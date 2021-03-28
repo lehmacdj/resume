@@ -1,8 +1,8 @@
 # resume
 This is my resume!
-It is mostly focused on technical internships and such for companies that do programming.
-Here is a [link](files/resume.pdf) to a copy of my resume that I keep around in this repository.
-It might not always be the most recent or up to date though.
+It is mostly focused on software engineering jobs.
+You can find a copy of my most recent resume at
+[files/resume.pdf](files/resume.pdf).
 
 ## Compiling
-To compile my resume use XeLaTeX (e.g. latexmk -xelatex), or simply type make.
+Use `make`. Compilation requires having a TexLive installation + make installed.
