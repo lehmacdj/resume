@@ -52,6 +52,11 @@ breaklinks}
 \begin{body}
 
 \section%
+{Summary}
+{Summary}
+{PDF:Summary}
+
+\section%
 {Education}
 {Education}
 {PDF:Education}
@@ -67,6 +72,7 @@ Bachelors of Arts in
 \BulletItem%
 Cumulative GPA:\@ 3.611
 
+% classes probably not super relevant after having real job experience
 \section%
 {Classes}
 {Classes}
@@ -105,17 +111,20 @@ $\bullet$
 {Work Experience}
 {PDF:WorkExperience}
 
-\textbf{Software Engineer} at Microsoft in Redmond, WA
+\textbf{Software Engineer II} at Microsoft in Redmond, WA
+\hfill
+\DatestampYM{2019}{8} --- Present
 \BulletItem%
+Design, prototype, develop, and test new features for a cloud service
 \BulletItem%
-\BulletItem%
+Monitor and analyze metrics and logs for service to ensure service quality
 \BulletItem%
 
 \textbf{Teaching Assistant} at Cornell University in Ithaca, NY
 \hfill
 \DatestampYM{2016}{2} --- \DatestampYM{2019}{05}
 \BulletItem%
-Taught a weekly section with 25 students
+Taught weekly sections with 25 students
 \BulletItem%
 Held weekly office hours to help students understand the course material
 \BulletItem%
@@ -139,12 +148,13 @@ Implemented a prototype of those features using Microsoft Service Fabric and Azu
 \hfill
 \DatestampYMD{2017}{06}{23} --- \DatestampYMD{2017}{08}{18}
 \BulletItem%
-Created a dashboard to visualize available space for testing meters
+Created a dashboard to visualize available space for testing electrical meters
 \BulletItem%
 Utilized Transact-SQL to collect data for the dashboard
 \BulletItem%
 Built and deployed reports to Sharepoint using Microsoft Reporting Services
 
+\Hide{%
 \textbf{Research Assistant} at Clemson University
 \hfill
 \DatestampYMD{2015}{06}{15} --- \DatestampYMD{2016}{08}{15}
@@ -156,6 +166,7 @@ Analyzed test results to visualize performance
 Wrote a daemon to dispatch jobs from a database to a server instance
 \BulletItem%
 Wrote back end code that interacted with a database to fetch and write new jobs
+}
 
 \section%
 {Projects}
@@ -180,11 +191,11 @@ Learned how to navigate and write a moderately sized (10,000 lines) C code base
 
 \textbf{Open Source}
 \BulletItem%
+Submit pull requests and bug reports, contribute to feature discussions
+\BulletItem%
 Made git credential daemon conform to the XDG directory specification
 \BulletItem%
-Discussed details of how the patch should be implemented with the git community
-\BulletItem%
-Wrote tests to ensure that behavior of the daemon was correct post patch
+Added missing library functions to Haskell libraries
 \GapNoBreak%
 
 \textbf{Interpreters}
@@ -207,57 +218,70 @@ an allocator
 Wrote a large number of tests to ensure that pointer arithmetic was correct
 \GapNoBreak%
 
-% \textbf{MIPS Processor}, CS 3410
-% \BulletItem%
-% Designed a MIPS processor in Logisim and tested it with programs written in
-% assembly
-% \BulletItem%
-% Learned how to decode binary MIPS instructions into control signals
-% \GapNoBreak%
+\Hide{%
+\textbf{MIPS Processor}, CS 3410
+\BulletItem%
+Designed a MIPS processor in Logisim and tested it with programs written in
+assembly
+\BulletItem%
+Learned how to decode binary MIPS instructions into control signals
+\GapNoBreak%
+}
 
-% \textbf{OCaml Ed}, github.com/lehmacdj/ocaml-ed
-% \BulletItem%
-% Implementation of ed, the 1960s line editor, written using OCaml
-% \BulletItem%
-% Wrote clear error handling code that cleanly passes errors up to the top level
-% \GapNoBreak%
+\Hide{%
+\textbf{OCaml Ed}, github.com/lehmacdj/ocaml-ed
+\BulletItem%
+Implementation of ed, the 1960s line editor, written using OCaml
+\BulletItem%
+Wrote clear error handling code that cleanly passes errors up to the top level
+\GapNoBreak%
+}
 
-% \href{https://www.github.com/lehmacdj/wiki_depth}
-% {\textbf{Wikipedia Depth}, github.com/lehmacdj/wiki\_depth}
-% \BulletItem%
-% Implemented a program that traverses Wikipedia to find the first encountered
-% cycle
-% \BulletItem%
-% Learned how to access and parse websites using Haskell
+\Hide{%
+\href{https://www.github.com/lehmacdj/wiki_depth}
+{\textbf{Wikipedia Depth}, github.com/lehmacdj/wiki\_depth}
+\BulletItem%
+Implemented a program that traverses Wikipedia to find the first encountered
+cycle
+\BulletItem%
+Learned how to access and parse websites using Haskell
+}
 
-% \textbf{Life Simulator}, github.com/lehmacdj/simulation
-% \BulletItem%
-% Implemented the Game of Life and multicolor variants using Rust
-% \BulletItem%
-% Learned how to write memory safe code using Rust and generate png images
+\Hide{%
+\textbf{Life Simulator}, github.com/lehmacdj/simulation
+\BulletItem%
+Implemented the Game of Life and multicolor variants using Rust
+\BulletItem%
+Learned how to write memory safe code using Rust and generate png images
+}
 
-% \textbf{System F Interpreter}, github.com/lehmacdj/system-f
-% \BulletItem%
-% Implemented an interpreter and type checker for System F
+\Hide{%
+\textbf{System F Interpreter}, github.com/lehmacdj/system-f
+\BulletItem%
+Implemented an interpreter and type checker for System F
+}
 
-% \textbf{Scheme Interpreter}, github.com/lehmacdj/haskell\_scheme
-% \BulletItem%
-% Built an interpreter for a subset of Scheme
-% \BulletItem%
-% Learned how to implement the semantics for dynamically typed programming
-% languages
-% \BulletItem%
-% Learned how to build a parser using Parsec
-% \GapNoBreak%
+\Hide{%
+\textbf{Scheme Interpreter}, github.com/lehmacdj/haskell\_scheme
+\BulletItem%
+Built an interpreter for a subset of Scheme
+\BulletItem%
+Learned how to implement the semantics for dynamically typed programming
+languages
+\BulletItem%
+Learned how to build a parser using Parsec
+\GapNoBreak%
+}
 
 \section%
 {Skills}
 {Skills}
 {PDF:Skills}
 
-Fluent: Java, C\#, Haskell, git, C, Rust, OCaml, Vim, Linux
+Fluent: C\#, Haskell, shell scripting, Microsoft Azure, git, Vim, Linux
 \GapNoBreak%
-Familiar: SQL, shell scripting, Networking, C++, Python, Microsoft Azure
+Familiar: C, Java, OCaml, Rust, SQL, Python
+
 
 \end{body}
 \end{minipage}
