@@ -11,11 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build resume
+        name: Checkout code
       - uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
             apk add make
             make persistent
-      - name: Commit/push new resume
+        name: Build resume
       - uses: actions-js/push@v1
+        name: Commit/push new resume
