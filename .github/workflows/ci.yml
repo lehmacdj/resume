@@ -13,10 +13,14 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout code
       - uses: xu-cheng/texlive-action/full@v1
+        name: Build resume
         with:
           run: |
             apk add make
             make persistent
-        name: Build resume
-      - uses: actions-js/push@v1
-        name: Commit/push new resume
+      - name: Commit updated persistent resume
+        run: |
+          git config --global user.name 'Devin Lehmacher'
+          git config --global user.email 'lehmacdj@users.noreply.github.com'
+          git commit -am "Automated build job: Update persistent resume"
+          git push
