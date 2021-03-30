@@ -1,7 +1,7 @@
 all: resume.pdf
 
 resume.pdf: resume.tex simpleresume.cls
-	xelatex resume.tex
+	xelatex resume.tex && rm resume.pdf && xelatex resume.tex
 
 .PHONY: clean
 clean:
