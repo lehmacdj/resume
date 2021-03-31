@@ -12,11 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout code
-      - uses: xu-cheng/texlive-action/full@v1
+      - uses: xu-cheng/texlive-action/small@v1
         name: Build resume
         with:
+          # note, it is important to include the packages used by the resume
+          # here, otherwise the CI job will fail
           run: |
             apk add make
+            tlmgr install pbox minibox
             make persistent
       - name: Commit updated persistent resume
         run: |
