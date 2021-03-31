@@ -3,11 +3,24 @@
 
 \documentclass[letterpaper,10pt,oneside]{simpleresume}
 
+\usepackage{pbox}
+\usepackage{minibox}
+
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Devin Lehmacher}
 \newcommand{\CVTitle}{\CVAuthor{}'s Resume}
 \newcommand{\CVWebpage}{github.com/lehmacdj}
 \newcommand{\CVMailAddress}{djl329@cornell.edu}
+\newcommand{\JobHeading}[3]{%
+#1
+\hfill
+\pbox[t][0pt]{\textwidth}{%
+\minibox[t,r]{%
+#2 \\
+#3
+}
+}
+}
 
 % PDF settings and properties.
 \hypersetup{%
@@ -71,6 +84,11 @@ Bachelors of Arts in
 \href{https://www.cs.cornell.edu}{Computer Science}
 \BulletItem%
 Cumulative GPA:\@ 3.611
+\Hide{%
+$\bullet$
+% this is calculated from only classes in subject CS
+Major GPA:\@
+}
 
 % classes probably not super relevant after having real job experience
 \section%
@@ -111,32 +129,46 @@ $\bullet$
 {Work Experience}
 {PDF:WorkExperience}
 
-\textbf{Software Engineer II} at Microsoft in Redmond, WA
-\hfill
-\DatestampYM{2019}{8} --- Present
+\JobHeading%
+{\textbf{Microsoft}, Azure AD, \emph{Software Engineer II}}
+{\DatestampYM{2019}{8} --- Present}
+{Redmond, WA}
 \BulletItem%
-Design, prototype, develop, and test new features for a cloud service
+Design, prototype, develop, and test new features for service migrating
 \BulletItem%
-Monitor and analyze metrics and logs for service to ensure service quality
+Monitor and analyze metrics and logs for service to ensure quality of service
 \BulletItem%
+Coordinate and plan work required for general availability of a cloud service
+\Hide{%
+\BulletItem%
+Critique, discuss, and review design documents and pull requests
+}
+\BulletItem%
+Debugged and implemented fixes for issues impacting customers' authentication
+\BulletItem%
+Integrated Polly, a C\# fault handling library, with an existing cloud service
+\BulletItem%
+Curate our team wiki, modernizing and contributing guides and documentation
 
-\textbf{Teaching Assistant} at Cornell University in Ithaca, NY
-\hfill
-\DatestampYM{2016}{2} --- \DatestampYM{2019}{05}
+\JobHeading%
+{\textbf{Cornell University}, \emph{Teaching Assistant}}
+{\DatestampYM{2016}{2} --- \DatestampYM{2019}{05}}
+{Ithaca, NY}
 \BulletItem%
 Taught weekly sections with 25 students
 \BulletItem%
 Held weekly office hours to help students understand the course material
 \BulletItem%
-Answered student's questions on Piazza, during office hours, and after class
+Answered students' questions on Piazza, during office hours, and after class
 \BulletItem%
 Helped test, create, and plan future assignments
 \BulletItem%
 Graded assignments and exams, giving students helpful feedback
 
-\textbf{Software Engineering Intern} at Microsoft in Redmond, WA
-\hfill
-\DatestampYMD{2018}{05}{29} --- \DatestampYMD{2018}{08}{17}
+\JobHeading%
+{\textbf{Microsoft}, \emph{Software Engineering Intern}}
+{\DatestampYMD{2018}{05}{29} --- \DatestampYMD{2018}{08}{17}}
+{Redmond, WA}
 \BulletItem%
 Designed a microservice architecture for a new cloud service
 \BulletItem%
@@ -144,9 +176,10 @@ Worked with team to determine what the service's critical features are
 \BulletItem%
 Implemented a prototype of those features using Microsoft Service Fabric and Azure
 
-\textbf{Intern} at Itron Inc.\ in Oconee, SC
-\hfill
-\DatestampYMD{2017}{06}{23} --- \DatestampYMD{2017}{08}{18}
+\JobHeading%
+{\textbf{Itron Inc.}, \emph{Intern}}
+{\DatestampYMD{2017}{06}{23} --- \DatestampYMD{2017}{08}{18}}
+{Oconee, SC}
 \BulletItem%
 Created a dashboard to visualize available space for testing electrical meters
 \BulletItem%
@@ -208,6 +241,7 @@ Wrote a library to abstract common tasks that arose when implementing
 interpreters
 \GapNoBreak%
 
+\Hide{%
 \textbf{Heaplib}
 \BulletItem%
 Implemented and tested malloc, free, and resize in C
@@ -217,6 +251,7 @@ an allocator
 \BulletItem%
 Wrote a large number of tests to ensure that pointer arithmetic was correct
 \GapNoBreak%
+}
 
 \Hide{%
 \textbf{MIPS Processor}, CS 3410
@@ -278,10 +313,9 @@ Learned how to build a parser using Parsec
 {Skills}
 {PDF:Skills}
 
-Fluent: C\#, Haskell, shell scripting, Microsoft Azure, git, Vim, Linux
+Fluent: Haskell, C\#, shell scripting, Microsoft Azure, git, Vim, Linux
 \GapNoBreak%
 Familiar: C, Java, OCaml, Rust, SQL, Python
-
 
 \end{body}
 \end{minipage}
