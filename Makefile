@@ -10,4 +10,4 @@ clean:
 	@echo "Clean!"
 
 persistent: resume.pdf
-	cp resume.pdf files/resume.pdf
+	cp resume.pdf files/Devin_Lehmacher.pdf
