@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{simpleresumecv}[2016/01/23 Simple Resume CV https://github.com/zachscrivena/simple-resume-cv]
+\ProvidesClass{simpleresume}[2016/01/23 Simple Resume CV https://github.com/zachscrivena/simple-resume-cv]
 
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{article}}
@@ -271,6 +271,13 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newlength{\BulletItemIndentationWidth}
 \newcommand{\BulletItem}{\par%
 \savebox{\BulletItemIndentation}{\hspace{1.5mm}\BulletSymbol\hspace{1.25mm}}%
+\settowidth{\BulletItemIndentationWidth}{\usebox{\BulletItemIndentation}}%
+\noindent\hangafter=1\hangindent=\BulletItemIndentationWidth\ignorespaces%
+\usebox{\BulletItemIndentation}\ignorespaces}
+
+% Macro: BulletContinuation.
+\newcommand{\BulletContinuation}{\par%
+\savebox{\BulletItemIndentation}{\hspace{1.5mm}\phantom{\BulletSymbol}\hspace{1.25mm}}%
 \settowidth{\BulletItemIndentationWidth}{\usebox{\BulletItemIndentation}}%
 \noindent\hangafter=1\hangindent=\BulletItemIndentationWidth\ignorespaces%
 \usebox{\BulletItemIndentation}\ignorespaces}
