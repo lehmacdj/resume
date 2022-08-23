@@ -31,7 +31,6 @@ pdfcreator={XeLaTeX},
 pdfproducer={},
 pdfkeywords={},
 pdfpagemode={},
-bookmarks=true,
 unicode=true,
 bookmarksopen=true,
 pdfstartview=FitH,
@@ -68,11 +67,11 @@ breaklinks}
 {Summary}
 {PDF:Summary}
 
-Self motivated software engineer with proven commitment to programming in
-Haskell. 2+ years of industry experience developing concurrent cloud services
-that comprise Microsoft's Azure AD identity platform. Strong theoretical
-background in functional programming and programming language theory from
-university courses.
+Curious, spontaneous, and continuously learning software engineer dedicated to
+writing performant, scalable software that fails gracefully. 3+ years of
+industry experience developing and designing cloud services.
+% maybe something about leadership experience + functional programming would
+% be good to put here too
 
 \section%
 {Education}
@@ -136,45 +135,86 @@ $\bullet$
 {PDF:Experience}
 
 \JobHeading%
+{\textbf{SimSpace}, \emph{Software Engineer II}}
+{\DatestampYMD{2021}{6}{14} --- Present}
+{Boston, MA (Remote)}
+\BulletItem%
+Technical Lead of Team Fourier, responsible for components managing and
+\BulletContinuation%
+orchestrating attacks targeting SimSpace's hyperrealistic cyber range platform
+\BulletItem%
+Defining and executing plan to decouple attack functionality from monolithic architecture
+\BulletItem%
+Led team level sprint planning and execution for 1 month of work at a time
+\BulletItem%
+Onboarded 4 new team members, quickly getting them up to speed with unfamiliar technologies
+\BulletItem%
+Brought lack of product vision for automated attacks to management's attention
+\BulletItem%
+Helping define product vision and set priorities for attack platform
+\BulletItem%
+Integrated linters and autoformatters into the build process, reducing noise during code review
+% there is also SimSpace.Lint.OpenImportWarnings, not really a large item, but
+% it's a good story, and impact != time spent. Some people wanted warning free,
+% some people couldn't live without warnings that sometimes had false
+% positives. Was able to write a linter in only a few hours that gave us the
+% best of both worlds
+
+\GapNoBreak%
+
+\JobHeading%
 {\textbf{Microsoft}, Azure AD, \emph{Software Engineer II}}
-{\DatestampYM{2019}{8} --- Present}
+{\DatestampYMD{2019}{8}{26} --- \DatestampYMD{2021}{5}{28}}
 {Redmond, WA}
 \BulletItem%
-Design, prototype, develop, instrument, and test new features for backend service
-\BulletItem%
-Monitor and analyze metrics and logs for service to ensure quality of service
-\BulletItem%
-Debug and fix bugs impacting customers' authentication
+Member of Hybrid Authentication Team, which is responsible for critical hybrid
+\BulletContinuation%
+Azure AD authentication scenarios servicing >50 million MAU
 % \BulletItem%
 % Curate our team wiki, modernizing and contributing guides and documentation
+\Hide{%
 \BulletItem%
 Participate in regular security and privacy reviews to ensure compliance
+}
 \BulletItem%
-Coordinated sub-team of 4 through transition to service's general availability
-% specifically I:
+Drove an infrastructure redesign, moving to a declarative Kubernetes-like deployment technology
+\BulletItem%
+Coordinated team of 4 through a service's transition to general availability, throughout which we:
+% in terms of coordination tasks I specifically:
 % - held monthly retrospectives
 % - tracked progress on work items
 % - suggested relevant work items
+\SubBulletItem%
+Improved service reliability from 1-2 nines to 4 nines over a 6 month period
+% this was mostly accomplished through improving scalability, though we also
+% made some improvements on account of fixing bugs and improving error
+% handling
+\SubBulletItem
+Quintupled the service's scalability via a database schema redesign and autoscaling
+% perhaps some other factors were relevant here too
 \BulletItem%
-Prototyped and completed Cosmos DB migration to handle over 5x of the original load
-% \BulletItem%
-% Integrated Polly, a C\# fault handling library, with an existing cloud service
+Improved team efficiency by introducing a kanban board for tracking bugs and tasks, curating
+\BulletContinuation%
+the team wiki, and helping define the agenda for observability and reliability monitoring
 \GapNoBreak%
 
 \JobHeading%
 {\textbf{Cornell University}, \emph{Teaching Assistant}}
 {\DatestampYM{2016}{2} --- \DatestampYM{2019}{05}}
 {Ithaca, NY}
+\BulletItem
+Courses ranging from introductory Object Oriented Programming to Formal
+Verification
 \BulletItem%
-Taught weekly sections with 25 students
+Taught and mentored students in weekly sections with up to 25 students
+\Hide{%
 \BulletItem%
 Held weekly office hours to help students understand the course material
+}
 \BulletItem%
 Answered students' questions on Piazza course platform, during office hours, and after class
 \BulletItem%
-Helped test, create, and plan future assignments
-\BulletItem%
-Graded assignments and exams, giving students helpful feedback
+Graded and contributed to the development of assignments and exams
 \GapNoBreak%
 
 \JobHeading%
@@ -186,7 +226,7 @@ Designed a microservice architecture for a new cloud service
 \BulletItem%
 Worked with team to determine what the service's critical features are
 \BulletItem%
-Implemented a prototype of those features using Microsoft Service Fabric and Azure
+Implemented a prototype of the service using Microsoft Service Fabric and Azure
 \GapNoBreak%
 
 \JobHeading%
@@ -228,24 +268,40 @@ Implemented parser, type checker, optimizer, and x86 assembly code generation
 Added object oriented features while maintaining backwards compatibility
 \GapNoBreak%
 
+\Hide{%
+\href{https://github.com/lehmacdj/wiki-language-server}{\textbf{Wiki Language Server}},
+Language server for zettlekasten-style interlinked markdown notes
+\BulletItem%
+Implement language server protocol
+}
+
+\Hide{%
 \href{https://github.com/lehmacdj/graph}{\textbf{Graph System}},
-Haskell knowlege graph console application
+Knowledge graph application
+\BulletItem%
+Primarily console application allowing filesystem like access to data stored in a graph structure
 \BulletItem%
 Extensively uses algebraic effects via polysemy library to make code more testable
 \BulletItem%
 Use GitHub Actions to ensure that test suite is run for all code changes
+\Hide{%
 \BulletItem%
 Made several JSON schema migrations, requiring careful planning for backwards compatibility
+}
 \GapNoBreak%
+}
 
-\textbf{Open Source}
+\textbf{Open Source Contributions}
 \BulletItem%
 Submit pull requests and bug reports, contribute to feature discussions
 \BulletItem%
 Made git credential daemon conform to the XDG directory specification
 \BulletItem%
-Added missing library functions to Haskell libraries
-% at least mono-traversable / classy-prelude, can't think of others right now
+Add missing functionality and support for new versions of dependencies to libraries
+% mostly in Haskell ecosystem, at least mono-traversable / classy-prelude,
+% can't think of others right now; but also from time at SimSpace semver
+% library support for parsing full node semver ranges, and ekg support for
+% servant 0.19
 \GapNoBreak%
 
 \textbf{PortOS}, minimal operating system running on a MIPS virtual machine
@@ -255,12 +311,14 @@ Implemented multithreading with preemption, and TCP and UDP analogs
 Learned how to navigate and write a moderately sized (10,000 lines) C code base
 \GapNoBreak%
 
+\Hide{%
 \textbf{Interpreters}, interpreters and type checkers for variety of languages
 \BulletItem%
 a subset Scheme, System F, OCalf (a subset of OCaml), and several others
 \BulletItem%
 Learned how to write REPLs using Haskeline and implement parsers using megaparsec
 \GapNoBreak%
+}
 
 \Hide{%
 \textbf{Heaplib}
@@ -306,9 +364,9 @@ Learned how to write memory safe code using Rust and generate png images
 {Skills}
 {PDF:Skills}
 
-Fluent: Haskell, C\#, shell scripting, Azure, Git, Vim, Linux
+Fluent: C\#, Swift, Haskell, shell scripting, Git, Vim, (Postgre)SQL
 \GapNoBreak%
-Familiar: REST, C, Java, OCaml, Rust, SQL, Python, Nix
+Familiar: JavaScript, React, C, Java, Azure, Rust, Python, OCaml\Hide{, Nix}
 
 \end{body}
 \end{minipage}
