@@ -14,4 +14,4 @@ persistent: files/Devin_Lehmacher.pdf
 	echo Don't make the persistent resume locally, it's built by the CI job
 
 files/Devin_Lehmacher.pdf: resume.pdf
-	cp resume.pdf files/Devin_Lehmacher.pdf
+	@cp resume.pdf files/Devin_Lehmacher.pdf
