@@ -22,5 +22,10 @@ jobs:
         run: |
           git config --global user.name 'Devin Lehmacher'
           git config --global user.email 'lehmacdj@users.noreply.github.com'
-          git commit -am "Automated build job: Update persistent resume"
-          git push
+          if git diff --quiet -- files/Devin_Lehmacher.pdf; then
+            echo "Resume unchanged"
+          else
+            git add files/Devin_Lehmacher.pdf
+            git commit -am "Automated build job: Update persistent resume"
+            git push
+          fi
