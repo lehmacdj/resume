@@ -9,5 +9,9 @@ clean:
 	>/dev/null 2>&1 | exit 0
 	@echo "Clean!"
 
-persistent: resume.pdf
+.PHONY: persistent
+persistent: files/Devin_Lehmacher.pdf
+	echo Don't make the persistent resume locally, it's built by the CI job
+
+files/Devin_Lehmacher.pdf: resume.pdf
 	cp resume.pdf files/Devin_Lehmacher.pdf
